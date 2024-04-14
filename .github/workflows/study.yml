@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 20
 
-      - run: node index.js
+      runs-on: node index.js
         env:
           DUOLINGO_JWT: ${{ secrets.DUOLINGO_JWT }}
           LESSONS: ${{ 1 }}
